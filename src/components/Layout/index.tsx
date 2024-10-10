@@ -24,54 +24,56 @@ const treeNodes = {
   data: [
     {
       id: 0,
-      label: 'Grant 0x01',
-      // children: [
-      //   {
-      //     id: 1,
-      //     label: 'virus.exe',
-      //     icon: <icons.FILE_EXECUTABLE variant="16x16_4" />,
-      //   },
-      // ],
+      label: 'Hackathon Prize from The Graph: $800',
+      // TODO: make the icon random from the list of icons.
+      // TODO: add the link to the income source.
+      icon: <icons.FILE_EXECUTABLE variant="16x16_4" />,
     },
     {
-      id: 2,
-      label: 'Grant 0x02',
-      // children: [
-      //   {
-      //     id: 3,
-      //     label: 'Indie',
-      //     children: [
-      //       {
-      //         id: 4,
-      //         label: 'Weezer',
-      //         icon: <icons.FILE_MEDIA variant="16x16_4" />,
-      //         onClick: () => alert('nice!'),
-      //       },
-      //       {
-      //         id: 5,
-      //         label: 'Supergrass',
-      //         icon: <icons.FILE_MEDIA variant="16x16_4" />,
-      //       },
-      //     ],
-      //   },
-      // ],
+      id: 1,
+      label: 'The Income from IndieHackers Accelerator R1: $350',
+      // TODO: make the icon random from the list of icons.
+      icon: <icons.FILE_EXECUTABLE variant="16x16_4" />,
     },
-    {
-      id: 3,
-      label: 'Others...',
-      // children: [
-      //   {
-      //     id: 0,
-      //     label: 'Fira Code.ttf',
-      //     icon: <icons.FILE_FONT variant="16x16_4" />,
-      //   },
-      //   {
-      //     id: 1,
-      //     label: 'Journal.txt',
-      //     icon: <icons.FILE_TEXT variant="16x16_4" />,
-      //   },
-      // ],
-    },
+    // {
+    //   id: 2,
+    //   label: 'Grant 0x02',
+    //   // children: [
+    //   //   {
+    //   //     id: 3,
+    //   //     label: 'Indie',
+    //   //     children: [
+    //   //       {
+    //   //         id: 4,
+    //   //         label: 'Weezer',
+    //   //         icon: <icons.FILE_MEDIA variant="16x16_4" />,
+    //   //         onClick: () => alert('nice!'),
+    //   //       },
+    //   //       {
+    //   //         id: 5,
+    //   //         label: 'Supergrass',
+    //   //         icon: <icons.FILE_MEDIA variant="16x16_4" />,
+    //   //       },
+    //   //     ],
+    //   //   },
+    //   // ],
+    // },
+    // {
+    //   id: 3,
+    //   label: 'Others...',
+    //   // children: [
+    //   //   {
+    //   //     id: 0,
+    //   //     label: 'Fira Code.ttf',
+    //   //     icon: <icons.FILE_FONT variant="16x16_4" />,
+    //   //   },
+    //   //   {
+    //   //     id: 1,
+    //   //     label: 'Journal.txt',
+    //   //     icon: <icons.FILE_TEXT variant="16x16_4" />,
+    //   //   },
+    //   // ],
+    // },
     // {
     //   id: 4,
     //   label: 'config.cfg',
@@ -146,12 +148,12 @@ const Layout = ({ children }) => {
             <br></br>
             <p>* <b>Expected Income:</b> $ 10,000</p>
             <br></br>
-            <ProgressBar width="200px" percent={0} />
+            <ProgressBar width="200px" percent={11.5} />
             <br></br><br></br>
             <p>
             <Qfecheck111 variant="32x32_4" alt="Income" />
             Where do I get the income from?</p>
-            {/* <Tree {...treeNodes} /> */}
+            <Tree {...treeNodes} />
           </S.LayoutMain>
         )}
 
